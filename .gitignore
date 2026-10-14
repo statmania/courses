@@ -1,0 +1,6 @@
+__pycache__/
+.quarto/
+*.swp
+*.kate-swp
+.DS_Store
+**/*.quarto_ipynb
