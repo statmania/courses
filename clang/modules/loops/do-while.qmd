@@ -6,6 +6,19 @@ kind: read
 objectives:
 - Explain why a do-while body runs at least once
 - Choose between while and do-while
+cheatsheet:
+- code: do { ... } while (c);
+  text: Run first, then test
+- code: while (c) { ... }
+  text: Test first, then run
+- code: do-while
+  text: Menus, retry prompts, PIN entry
+- code: break;
+  text: Leave the loop early
+rail-links:
+- title: do-while loop
+  url: https://en.cppreference.com/w/c/language/do
+  icon: fa-book
 ---
 
 ![A do-while loop runs its body first, then tests the condition](../../media/c-do-while-flow.svg){fig-alt="Flowchart: the loop body runs, then the condition PIN != 2471 is tested. If true, control returns to the body; if false, the loop exits."}
@@ -136,3 +149,13 @@ do-while body, n = 10
 ## Key takeaway
 
 `do-while` = **do the body, then decide whether to repeat**. Use it when the body must run at least once, such as prompts, menus and retry logic. Otherwise, `while` or `for` is usually clearer.
+
+::: {.takeaways}
+- The body of a `do-while` always runs at least once.
+- The condition is tested after the body.
+- Note the semicolon after `while (...)`.
+:::
+
+::: {.column-margin}
+**Sentinel.** A special input value, such as 0, that tells a loop to stop.
+:::

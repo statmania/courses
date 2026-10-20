@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0c647c8580895af5b89a9f2b09cf3b6e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-961a7574ac9e049661ed0ed39fb0bc92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -385,7 +385,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/start/index.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../../modules/start/hello-world.html">C's "Hello, World!" Explained Line by Line (for R &amp; Python Users)</a></li></ol></nav>
 <div class="quarto-title">
@@ -418,6 +418,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="objectives"><p class="objectives-label"><i class="fa-solid fa-bullseye"></i>By the end of this lesson you will</p><ul>
 <li>Explain every line of the classic Hello, World! program</li>
 <li>Compare C’s structure with Python and R</li>
+</ul></div>
+<div class="rail-card cheatsheet"><h4 class="anchored"><i class="fa-solid fa-rectangle-list"></i>Cheat sheet</h4><dl>
+<div><dt><code>#include &lt;stdio.h&gt;</code></dt><dd>Bring in input/output functions</dd></div>
+<div><dt><code>int main(void)</code></dt><dd>Where the program starts</dd></div>
+<div><dt><code>printf(“hi”);</code></dt><dd>Print text; is a new line</dd></div>
+<div><dt><code>return 0;</code></dt><dd>Exit with success</dd></div>
+</dl></div>
+<div class="rail-card resources"><h4 class="anchored"><i class="fa-solid fa-link"></i>Resources</h4><ul>
+<li><a href="https://en.cppreference.com/w/c/io/fprintf"><i class="fa-solid fa-book"></i>printf reference</a></li>
+<li><a href="https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html"><i class="fa-solid fa-terminal"></i>GCC manual</a></li>
 </ul></div>
 <p>The classic “Hello, World!” program in C is as follows:</p>
 <p><img src="../../media/linux-prog.jpeg" class="img-fluid"></p>
@@ -493,7 +503,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Exit:</strong> <code>return 0;</code> tells the OS the program finished successfully.</li>
 </ol>
 </section>
-<section id="why-this-feels-so-different-from-rpython" class="level3">
+<section id="why-this-feels-so-different-from-rpython" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="why-this-feels-so-different-from-rpython">Why this feels so different from R/Python</h3>
 <p>In R and Python, the interpreter handles memory, types, and execution flow for you. In C, you are explicitly telling the computer:</p>
 <ol type="1">
@@ -503,14 +513,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>How to cleanly exit (<code>return 0</code>)</li>
 </ol>
 <p>It is more verbose, but it gives you complete control over the machine. As you progress, you will learn to appreciate this structure, especially when you start managing memory and building complex data structures.</p>
+<div class="takeaways">
+<ul>
+<li>Every C program starts running at <code>main</code>.</li>
+<li><code>#include &lt;stdio.h&gt;</code> makes <code>printf</code> available.</li>
+<li><code>return 0;</code> tells the system the program succeeded.</li>
+</ul>
+</div>
 
 
-</section>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Compiler.</strong> A program that turns C source code into a program the computer can run, such as <code>gcc</code>.</p>
+</div></div></section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<!-- Starfield background. The canvas is drawn by the shared site script (same one the main
-     site and the other courses use), loaded from the site root so it works at any depth.
-     CSS for .sm-canvas is in theme/course.scss. Without the script the page is just dark. -->
+<!-- Starfield background (option `starfield: true` in _quarto.yml). Generated; do not edit. -->
+<script>document.documentElement.classList.add('sm-starfield');</script>
 <canvas class="sm-canvas" aria-hidden="true"></canvas>
 <script src="https://www.statmania.info/starfield.js" async=""></script>
 <!-- Site footer. Edit the links below; social links are "#" placeholders. -->

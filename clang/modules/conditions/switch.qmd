@@ -7,6 +7,22 @@ objectives:
 - Write a switch with break and default
 - Use fall-through deliberately
 - Choose between switch and if / else if
+cheatsheet:
+- code: switch (x) { ... }
+  text: Pick a case by value
+- code: 'case 1: ... break;'
+  text: Run, then leave the switch
+- code: 'default:'
+  text: No case matched
+- code: 'case ''a'': case ''b'':'
+  text: Grouped cases
+rail-links:
+- title: switch statement
+  url: https://en.cppreference.com/w/c/language/switch
+  icon: fa-book
+- title: break statement
+  url: https://en.cppreference.com/w/c/language/break
+  icon: fa-book
 ---
 
 ![A switch compares its expression with each case; the matching case runs until break jumps out](../../media/c-switch-flow.svg){fig-alt="Flowchart: switch (choice) is compared with case 1, case 2, case 3 and default. The matching case runs its statement, then break jumps to the code after the switch."}
@@ -211,3 +227,13 @@ A range such as "grade from a score" is a job for `if / else if` (see 10 Real-Wo
 ## Key takeaway
 
 `switch` evaluates an integer expression once and jumps straight to the matching `case`. Remember `break` after each case unless we deliberately want fall-through, and always add a `default` for input we didn't expect.
+
+::: {.takeaways}
+- `switch` compares one integer or char against `case` labels.
+- Without `break`, execution falls through to the next case.
+- Always add a `default` case.
+:::
+
+::: {.column-margin}
+**Fall-through.** Continuing into the next `case` because a `break` is missing.
+:::

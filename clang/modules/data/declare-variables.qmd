@@ -6,6 +6,22 @@ kind: read
 objectives:
 - Declare and initialise several variables in one statement
 - Avoid the pointer-asterisk and partial-initialisation traps
+cheatsheet:
+- code: int a, b, c;
+  text: Three uninitialised ints
+- code: int x = 5, y = 10;
+  text: Each gets its own value
+- code: int a = b = 0;
+  text: 'Chained: b must exist already'
+- code: int *p, q;
+  text: p is a pointer, q is an int
+rail-links:
+- title: Declarations
+  url: https://en.cppreference.com/w/c/language/declarations
+  icon: fa-book
+- title: Initialization
+  url: https://en.cppreference.com/w/c/language/initialization
+  icon: fa-book
 ---
 
 ![One type name can declare many variables, but the asterisk of a pointer belongs to a single variable.](../../media/c-declare-multiple-variables.svg){fig-alt="A code editor shows int a, b, c; int x = 5, y = 10; and int *p, q;. Beside it, one int tag is connected to three boxes a, b and c. Below, p is shown as an int pointer and q as a plain int."}
@@ -189,3 +205,13 @@ for (int i = 0; i < 10; i++) {
 | Same starting value | `int a = 0, b = 0;` or `int a, b; a = b = 0;` | `int a = b = 0;` is an error |
 | Several pointers | `int *p, *q;` | The `*` belongs to each name |
 | Different types | Separate statements | One base type per declaration |
+
+::: {.takeaways}
+- `int a, b, c;` declares three ints but initialises none.
+- In `int *p, q;` only `p` is a pointer.
+- Initialise each variable you declare.
+:::
+
+::: {.column-margin}
+**Initialisation.** Giving a variable its first value at the moment it is declared.
+:::

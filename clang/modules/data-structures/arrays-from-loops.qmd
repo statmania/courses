@@ -6,6 +6,22 @@ kind: code
 objectives:
 - Fill a fixed-size array from a loop
 - Grow an array with malloc and realloc
+cheatsheet:
+- code: int a[5];
+  text: Five ints, indices 0 to 4
+- code: a[i] = i * i;
+  text: Store a result
+- code: malloc(n * sizeof *p)
+  text: Allocate n items
+- code: realloc(p, m * sizeof *p)
+  text: Resize; free(p) when done
+rail-links:
+- title: Arrays
+  url: https://en.cppreference.com/w/c/language/array
+  icon: fa-book
+- title: malloc
+  url: https://en.cppreference.com/w/c/memory/malloc
+  icon: fa-book
 ---
 
 ![A for loop writes i * i into results[i] on each pass, filling the array one slot at a time.](../../media/c-save-loop-in-array.svg){fig-alt="A for loop with index i from 0 to 4 writes i times i into results[i], filling five boxes with 0, 1, 4, 9 and 16."}
@@ -108,3 +124,13 @@ Three habits to notice:
 |---|---|
 | Number of iterations known | Fixed array, `array[i] = value;` |
 | Number of iterations unknown | `malloc()` + `realloc()`, track `count` and `capacity` |
+
+::: {.takeaways}
+- Use the loop index to store each result: `a[i] = ...`.
+- A fixed array needs its size known up front.
+- `malloc` and `realloc` grow storage at run time.
+:::
+
+::: {.column-margin}
+**Index.** A number that picks one element of an array; the first is 0.
+:::

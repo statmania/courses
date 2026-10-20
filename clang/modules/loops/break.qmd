@@ -6,6 +6,22 @@ kind: read
 objectives:
 - Separate a loop's planned exit from break
 - Apply break to search, sentinel, retry and menu loops
+cheatsheet:
+- code: break;
+  text: Leave the loop now
+- code: while (1)
+  text: Endless loop, needs a break
+- code: if (x == t) break;
+  text: Stop on a match
+- code: continue;
+  text: Skip to the next pass
+rail-links:
+- title: break statement
+  url: https://en.cppreference.com/w/c/language/break
+  icon: fa-book
+- title: while loop
+  url: https://en.cppreference.com/w/c/language/while
+  icon: fa-book
 ---
 
 ![A loop has a planned exit (the condition) and an emergency exit (break).](../../media/c-break-while-loop.svg){fig-alt="A while loop box with the condition i < 10. A teal arrow on the right is the normal exit when the condition is false; a red arrow below is the break exit taken when i equals 4."}
@@ -146,3 +162,13 @@ Here `break` *is* the exit condition. (A real program should also stop when `sca
 A `while` condition says *when to keep going in the normal case*. A `break` says *stop immediately when a special case shows up*. The special case often can't be checked in the condition, because it is only known once we are inside the loop.
 
 For more practice, see [while loop practice problems](while-practice.qmd).
+
+::: {.takeaways}
+- The condition is the planned exit; `break` is the special-case exit.
+- `while (1)` with a `break` suits menus and retries.
+- `break` leaves only the innermost loop.
+:::
+
+::: {.column-margin}
+**Innermost loop.** The loop closest around the `break`; outer loops keep running.
+:::

@@ -6,6 +6,19 @@ kind: lab
 objectives:
 - Solve five for-loop problems
 - Check your work against hints and solutions
+cheatsheet:
+- code: for (i = 1; i <= n; i++)
+  text: Count 1 to n
+- code: i += 2
+  text: Step by two
+- code: product *= i;
+  text: Accumulate a product
+- code: next = a + b;
+  text: Fibonacci step
+rail-links:
+- title: for loop
+  url: https://en.cppreference.com/w/c/language/for
+  icon: fa-book
 ---
 
 ![A for loop packs its initialisation, condition and update into one line.](../../media/c-for-practice.svg){fig-alt="The header for (int i = 1; i <= 5; i++) with init, condition and update labelled, beside a terminal printing a triangle of asterisks."}
@@ -253,3 +266,13 @@ The inner loop's limit depends on the outer loop's variable (`col <= row`). That
 | 3. Count digits | A custom update step (`temp /= 10`) |
 | 4. Fibonacci | Updating several variables per pass |
 | 5. Star triangle | Nested loops, inner limit tied to the outer variable |
+
+::: {.takeaways}
+- `for (init; test; update)` packs the loop bookkeeping on one line.
+- Pick `for` when you know how many passes you need.
+- Use `long` or `unsigned long long` for large factorials.
+:::
+
+::: {.column-margin}
+**Accumulator.** A variable that collects a running total or product through a loop.
+:::

@@ -6,6 +6,22 @@ kind: code
 objectives:
 - Check scanf's return value
 - Validate whole-number input with fgets and strtol
+cheatsheet:
+- code: scanf("%d", &n) == 1
+  text: True if an int was read
+- code: fgets(buf, n, stdin)
+  text: Read a whole line
+- code: strtol(s, &end, 10)
+  text: Convert; end marks where it stopped
+- code: '*end == ''\n'''
+  text: 'Nothing left over: valid'
+rail-links:
+- title: scanf
+  url: https://en.cppreference.com/w/c/io/fscanf
+  icon: fa-book
+- title: strtol
+  url: https://en.cppreference.com/w/c/string/byte/strtol
+  icon: fa-book
 ---
 
 ![Typed input goes through a check. A whole number is used; anything else prints an error.](../../media/c-validate-input.svg){fig-alt="A box 'user types 5, abc, 12abc' leads to a box 'check it: is it all a number?'. Yes leads to 'use it'; no leads to 'error'."}
@@ -106,3 +122,13 @@ Enter a number: 20
 - Always check what `scanf` returns.
 - `scanf` accepts `12abc` as `12`; for strict checks use `fgets` + `strtol` and test `*end`.
 - Check the type first, then whether the value makes sense.
+
+::: {.takeaways}
+- `scanf` returns how many values it read; check it.
+- Partial input like `12abc` slips past a plain `scanf`.
+- `fgets` + `strtol` reports exactly where the number ends.
+:::
+
+::: {.column-margin}
+**Buffer.** A block of memory holding text before the program uses it, such as the line `fgets` reads.
+:::

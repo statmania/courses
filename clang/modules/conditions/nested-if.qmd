@@ -6,6 +6,19 @@ kind: read
 objectives:
 - Predict when an inner if runs
 - Trace a nested decision with a flowchart
+cheatsheet:
+- code: if (a) { if (b) {...} }
+  text: b is checked only when a is true
+- code: if (a && b)
+  text: Flat version of the same test
+- code: else
+  text: Pairs with the nearest if
+- code: '{ }'
+  text: Always add braces
+rail-links:
+- title: if statement
+  url: https://en.cppreference.com/w/c/language/if
+  icon: fa-book
 ---
 
 ![Nested `if`: the inner check runs only when the outer condition is true](../../media/c-nested-if-flow.svg)
@@ -147,3 +160,13 @@ The inner `if` is evaluated only when the outer condition is true. This makes th
 2. [Nested if statement in C with code examples (Uncodemy)](https://uncodemy.com/blog/nested-if-statement-in-c-with-code-examples)
 3. [Nested if-else in C (WsCube Tech)](https://www.wscubetech.com/resources/c-programming/nested-if-else)
 4. [C if...else statement example (BeginnersBook)](https://beginnersbook.com/2014/01/c-if-else-statement-example/)
+
+::: {.takeaways}
+- The inner `if` runs only when the outer condition is true.
+- `&&` can replace a nest when there is no `else` between the checks.
+- Use braces on every level.
+:::
+
+::: {.column-margin}
+**Nesting.** Placing one statement inside another, such as an `if` inside an `if`.
+:::

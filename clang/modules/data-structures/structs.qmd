@@ -7,6 +7,19 @@ objectives:
 - Group different types into one struct
 - Use arrays of structs, typedef and ->
 - Compare structs with Python dicts and R lists
+cheatsheet:
+- code: struct S { int id; };
+  text: Declare a struct type
+- code: s.id = 7;
+  text: Access a field
+- code: p->id
+  text: Field through a pointer
+- code: typedef struct {...} S;
+  text: Name it once
+rail-links:
+- title: Struct types
+  url: https://en.cppreference.com/w/c/language/struct
+  icon: fa-book
 ---
 
 ![A struct is one block of memory holding several fields, with padding between them](../../media/c-struct-memory.svg){fig-alt="A struct Student occupies 60 bytes: name uses 50, then 2 bytes of padding, then id uses 4 and gpa uses 4."}
@@ -264,3 +277,13 @@ Let's start with Example 1 (student record) and Example 3 (point): write them, c
 - Build an array of 5 students and sort them by GPA.
 
 Once we're comfortable with these, structs will become a natural tool for organizing our data, and we'll be ready for pointer-based data structures such as linked lists, trees and hash tables.
+
+::: {.takeaways}
+- A struct groups fields of different types into one value.
+- Use `.` on a struct and `->` on a pointer to one.
+- `typedef` gives the struct a shorter name.
+:::
+
+::: {.column-margin}
+**Padding.** Unused bytes the compiler inserts between fields to keep them aligned.
+:::

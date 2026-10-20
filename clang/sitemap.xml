@@ -6,7 +6,7 @@
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/random/die-throw.html</loc>
-    <lastmod>2026-10-20T01:43:42.803Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.531Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/loops/index.html</loc>
@@ -14,11 +14,11 @@
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/loops/while-practice.html</loc>
-    <lastmod>2026-10-20T01:43:42.775Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.513Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/loops/for-practice.html</loc>
-    <lastmod>2026-10-20T01:43:42.781Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.498Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/data/index.html</loc>
@@ -26,11 +26,11 @@
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/data/declare-variables.html</loc>
-    <lastmod>2026-10-20T01:43:42.734Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.464Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/data-structures/arrays-from-loops.html</loc>
-    <lastmod>2026-10-20T01:43:42.789Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.476Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/start/index.html</loc>
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/start/hello-world.html</loc>
-    <lastmod>2026-10-20T01:43:42.721Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.544Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/conditions/index.html</loc>
@@ -46,11 +46,11 @@
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/conditions/nested-if.html</loc>
-    <lastmod>2026-10-20T01:43:42.750Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.446Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/operators/validate-input.html</loc>
-    <lastmod>2026-10-20T01:43:42.744Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.525Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/index.html</loc>
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/operators/increment.html</loc>
-    <lastmod>2026-10-20T01:43:42.740Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.519Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/operators/index.html</loc>
@@ -66,19 +66,19 @@
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/conditions/switch.html</loc>
-    <lastmod>2026-10-20T01:43:42.757Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.452Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/conditions/ternary.html</loc>
-    <lastmod>2026-10-20T01:43:42.754Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.458Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/start/test-code-quickly.html</loc>
-    <lastmod>2026-10-20T01:43:42.727Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.550Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/data-structures/structs.html</loc>
-    <lastmod>2026-10-20T01:43:42.792Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.481Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/data-structures/index.html</loc>
@@ -86,26 +86,26 @@
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/data/float-vs-double.html</loc>
-    <lastmod>2026-10-20T01:43:42.737Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.470Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/loops/break.html</loc>
-    <lastmod>2026-10-20T01:43:42.768Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.488Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/loops/do-while.html</loc>
-    <lastmod>2026-10-20T01:43:42.762Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.493Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/loops/nested-for-practice.html</loc>
-    <lastmod>2026-10-20T01:43:42.785Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.502Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/loops/print-lists.html</loc>
-    <lastmod>2026-10-20T01:43:42.771Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.509Z</lastmod>
   </url>
   <url>
     <loc>https://www.statmania.info/courses/clang/modules/random/srand.html</loc>
-    <lastmod>2026-10-20T01:43:42.799Z</lastmod>
+    <lastmod>2026-10-20T02:21:50.538Z</lastmod>
   </url>
 </urlset>

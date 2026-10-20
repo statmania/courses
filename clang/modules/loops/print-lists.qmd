@@ -6,6 +6,19 @@ kind: code
 objectives:
 - Print a list with no trailing comma
 - Use newlines to print rows of numbers
+cheatsheet:
+- code: printf("%d, ", i)
+  text: Leaves a trailing comma
+- code: if (i > 0) printf(", ");
+  text: Separator before items
+- code: 'i ? ", " : ""'
+  text: Ternary separator
+- code: printf("\n");
+  text: End each row
+rail-links:
+- title: printf reference
+  url: https://en.cppreference.com/w/c/io/fprintf
+  icon: fa-book
 ---
 
 ![A separator printed only between items leaves no trailing comma; a newline after the inner loop ends each row.](../../media/c-comma-list.svg){fig-alt="Terminal output showing a list that ends with a stray comma, a clean list without it, and a three-row grid of numbers with a newline after each row."}
@@ -201,3 +214,13 @@ for (int i = 1; i <= 4; i++) {
 | No trailing comma, always correct | a `first` flag |
 | Separator or newline in one call | `printf("%d%s", x, last ? "\n" : ", ");` |
 | One row per line in nested loops | `printf("\n");` after the inner loop |
+
+::: {.takeaways}
+- Print the separator before every item except the first.
+- A `first` flag always works, even for odd cases.
+- Print `\n` after the inner loop, not inside it.
+:::
+
+::: {.column-margin}
+**Delimiter.** The text placed between items in a list, such as a comma and a space.
+:::

@@ -6,6 +6,22 @@ kind: read
 objectives:
 - Tell ++i from i++ and say what each expression returns
 - Know when the difference matters
+cheatsheet:
+- code: b = ++a;
+  text: a becomes 6, b is 6
+- code: y = x++;
+  text: y is 5, x becomes 6
+- code: i++;
+  text: 'Standalone: same as ++i'
+- code: i += 1
+  text: Add 1 explicitly
+rail-links:
+- title: Increment and decrement
+  url: https://en.cppreference.com/w/c/language/operator_incdec
+  icon: fa-book
+- title: Operator precedence
+  url: https://en.cppreference.com/w/c/language/operator_precedence
+  icon: fa-book
 ---
 
 ![With a = 5, ++a updates a first, so b gets 6. With x = 5, x++ hands over the old value first, so y gets 5.](../../media/c-pre-vs-post-increment.svg){fig-alt="Two columns. Pre-increment b = ++a: a goes from 5 to 6, then b is 6. Post-increment y = x++: y gets the old value 5, then x goes from 5 to 6."}
@@ -97,3 +113,13 @@ In C, a compiler produces the same code for a standalone `++i` and `i++`. In C++
 - [Scaler: pre-increment and post-increment in C](https://www.scaler.com/topics/pre-increment-and-post-increment-in-c/)
 - [Reddit r/C_Programming: pre vs post increment](https://www.reddit.com/r/C_Programming/comments/m1f5kq/pre_vs_post_increment/)
 - [DEV: unmasking the difference between ++i and i++](https://dev.to/galaxy233/unmasking-the-difference-pre-increment-i-vs-post-increment-i-in-c-39ok)
+
+::: {.takeaways}
+- `++i` changes `i`, then returns the new value.
+- `i++` returns the old value, then changes `i`.
+- On its own line they do the same thing.
+:::
+
+::: {.column-margin}
+**Side effect.** A change to a variable made while an expression is evaluated, such as `i++`.
+:::

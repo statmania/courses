@@ -6,6 +6,22 @@ kind: read
 objectives:
 - Explain every line of the classic Hello, World! program
 - Compare C's structure with Python and R
+cheatsheet:
+- code: '#include <stdio.h>'
+  text: Bring in input/output functions
+- code: int main(void)
+  text: Where the program starts
+- code: printf("hi\n");
+  text: Print text; \n is a new line
+- code: return 0;
+  text: Exit with success
+rail-links:
+- title: printf reference
+  url: https://en.cppreference.com/w/c/io/fprintf
+  icon: fa-book
+- title: GCC manual
+  url: https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html
+  icon: fa-terminal
 ---
 
 The classic "Hello, World!" program in C is as follows:
@@ -131,3 +147,13 @@ In R and Python, the interpreter handles memory, types, and execution flow for y
 4. How to cleanly exit (`return 0`)
 
 It is more verbose, but it gives you complete control over the machine. As you progress, you will learn to appreciate this structure, especially when you start managing memory and building complex data structures.
+
+::: {.takeaways}
+- Every C program starts running at `main`.
+- `#include <stdio.h>` makes `printf` available.
+- `return 0;` tells the system the program succeeded.
+:::
+
+::: {.column-margin}
+**Compiler.** A program that turns C source code into a program the computer can run, such as `gcc`.
+:::

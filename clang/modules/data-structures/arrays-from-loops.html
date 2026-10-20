@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0c647c8580895af5b89a9f2b09cf3b6e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-961a7574ac9e049661ed0ed39fb0bc92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -381,7 +381,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/data-structures/index.html">Arrays and Structs</a></li><li class="breadcrumb-item"><a href="../../modules/data-structures/arrays-from-loops.html">How to Save Loop Results in an Array in C</a></li></ol></nav>
 <div class="quarto-title">
@@ -414,6 +414,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="objectives"><p class="objectives-label"><i class="fa-solid fa-bullseye"></i>By the end of this lesson you will</p><ul>
 <li>Fill a fixed-size array from a loop</li>
 <li>Grow an array with malloc and realloc</li>
+</ul></div>
+<div class="rail-card cheatsheet"><h4 class="anchored"><i class="fa-solid fa-rectangle-list"></i>Cheat sheet</h4><dl>
+<div><dt><code>int a[5];</code></dt><dd>Five ints, indices 0 to 4</dd></div>
+<div><dt><code>a[i] = i * i;</code></dt><dd>Store a result</dd></div>
+<div><dt><code>malloc(n * sizeof *p)</code></dt><dd>Allocate n items</dd></div>
+<div><dt><code>realloc(p, m * sizeof *p)</code></dt><dd>Resize; free(p) when done</dd></div>
+</dl></div>
+<div class="rail-card resources"><h4 class="anchored"><i class="fa-solid fa-link"></i>Resources</h4><ul>
+<li><a href="https://en.cppreference.com/w/c/language/array"><i class="fa-solid fa-book"></i>Arrays</a></li>
+<li><a href="https://en.cppreference.com/w/c/memory/malloc"><i class="fa-solid fa-book"></i>malloc</a></li>
 </ul></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -506,7 +516,7 @@ Warning
 <li><code>free()</code> returns the memory when we are done.</li>
 </ul>
 </section>
-<section id="summary" class="level3">
+<section id="summary" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="summary">Summary</h3>
 <table class="caption-top table">
 <colgroup>
@@ -530,14 +540,23 @@ Warning
 </tr>
 </tbody>
 </table>
+<div class="takeaways">
+<ul>
+<li>Use the loop index to store each result: <code>a[i] = ...</code>.</li>
+<li>A fixed array needs its size known up front.</li>
+<li><code>malloc</code> and <code>realloc</code> grow storage at run time.</li>
+</ul>
+</div>
 
 
-</section>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Index.</strong> A number that picks one element of an array; the first is 0.</p>
+</div></div></section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<!-- Starfield background. The canvas is drawn by the shared site script (same one the main
-     site and the other courses use), loaded from the site root so it works at any depth.
-     CSS for .sm-canvas is in theme/course.scss. Without the script the page is just dark. -->
+<!-- Starfield background (option `starfield: true` in _quarto.yml). Generated; do not edit. -->
+<script>document.documentElement.classList.add('sm-starfield');</script>
 <canvas class="sm-canvas" aria-hidden="true"></canvas>
 <script src="https://www.statmania.info/starfield.js" async=""></script>
 <!-- Site footer. Edit the links below; social links are "#" placeholders. -->

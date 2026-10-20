@@ -6,6 +6,19 @@ kind: lab
 objectives:
 - Solve five while-loop problems
 - Check your work against hints and solutions
+cheatsheet:
+- code: while (i <= 10)
+  text: Repeat while true
+- code: i++;
+  text: Update the counter
+- code: n % 10
+  text: Last digit
+- code: n /= 10;
+  text: Drop the last digit
+rail-links:
+- title: while loop
+  url: https://en.cppreference.com/w/c/language/while
+  icon: fa-book
 ---
 
 ![A while loop repeats its body, such as printing 1, 2, 3 ..., as long as the test is true.](../../media/c-while-practice.svg){fig-alt="A circular arrow labelled while (i <= 10) beside a terminal window printing 1 to 5, with printf and i++ code."}
@@ -277,3 +290,13 @@ The special case matters: for `0` the condition `temp != 0` is false at once, so
 | 3. Factorial | An accumulator that multiplies |
 | 4. Reverse a number | Peeling digits with `%` and `/` |
 | 5. Count digits | A counter that runs until the value reaches 0 |
+
+::: {.takeaways}
+- Set up the counter before the loop and change it inside.
+- A forgotten update is an infinite loop.
+- `n % 10` is the last digit and `n / 10` removes it.
+:::
+
+::: {.column-margin}
+**Loop counter.** A variable that changes each pass and eventually makes the condition false.
+:::

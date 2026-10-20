@@ -47,6 +47,9 @@ quarto preview
   module pages are generated from it and from each lesson's front matter.
 - Run `quarto render` before committing: the built site is committed and served as-is.
 - `courses.yml` is a stub only because the kit's `build.py` requires it; "All Courses" links to the hub page.
+- `starfield: true` at the top of `_quarto.yml` turns on the animated background (a kit option, default `false`).
+- The right-hand cards (cheat sheet, resources, key takeaways, margin note) come from each lesson's front matter and
+  `.takeaways` / `.column-margin` blocks. `tools/enrich_lessons.py` holds the text for all lessons; edit it there or in the lesson.
 - `tools/import_posts.py` was the one-off importer from the blog. Re-running it overwrites the lessons.
 
 ## Progress tracking

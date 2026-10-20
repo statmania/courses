@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0c647c8580895af5b89a9f2b09cf3b6e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-961a7574ac9e049661ed0ed39fb0bc92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -384,7 +384,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/start/index.html">Getting Started</a></li><li class="breadcrumb-item"><a href="../../modules/start/test-code-quickly.html">How to Test a Small C Snippet Quickly</a></li></ol></nav>
 <div class="quarto-title">
@@ -417,6 +417,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="objectives"><p class="objectives-label"><i class="fa-solid fa-bullseye"></i>By the end of this lesson you will</p><ul>
 <li>Build and run a C file with one gcc command</li>
 <li>Choose a fast way to try small snippets</li>
+</ul></div>
+<div class="rail-card cheatsheet"><h4 class="anchored"><i class="fa-solid fa-rectangle-list"></i>Cheat sheet</h4><dl>
+<div><dt><code>gcc a.c -o a</code></dt><dd>Compile a.c into program a</dd></div>
+<div><dt><code>./a</code></dt><dd>Run it</dd></div>
+<div><dt><code>-Wall -Wextra</code></dt><dd>Turn on useful warnings</dd></div>
+<div><dt><code>./a &lt; in.txt</code></dt><dd>Feed input from a file</dd></div>
+</dl></div>
+<div class="rail-card resources"><h4 class="anchored"><i class="fa-solid fa-link"></i>Resources</h4><ul>
+<li><a href="https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html"><i class="fa-solid fa-terminal"></i>GCC manual</a></li>
+<li><a href="https://www.onlinegdb.com/online_c_compiler"><i class="fa-solid fa-globe"></i>OnlineGDB C compiler</a></li>
 </ul></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -490,20 +500,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Repeated <code>scanf</code> input: <code>./test &lt; input.txt</code>.</li>
 </ul>
 </section>
-<section id="references" class="level3">
+<section id="references" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="references">References</h3>
 <ul>
 <li><a href="https://stackoverflow.com/questions/6815383/how-to-test-c-or-c-snippet-quickly">Stack Overflow: how to test a C or C++ snippet quickly</a></li>
 <li><a href="https://www.quora.com/How-can-I-test-a-C-or-C++-program-without-having-to-manually-enter-inputs-every-time">Quora: testing a C or C++ program without entering inputs manually</a></li>
 </ul>
+<div class="takeaways">
+<ul>
+<li><code>gcc file.c -o out &amp;&amp; ./out</code> builds and runs in one line.</li>
+<li>Online compilers need no setup for tiny snippets.</li>
+<li>Add <code>-Wall -Wextra</code> to catch mistakes early.</li>
+</ul>
+</div>
 
 
-</section>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Redirect.</strong> <code>&lt;</code> makes a program read its input from a file instead of the keyboard.</p>
+</div></div></section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<!-- Starfield background. The canvas is drawn by the shared site script (same one the main
-     site and the other courses use), loaded from the site root so it works at any depth.
-     CSS for .sm-canvas is in theme/course.scss. Without the script the page is just dark. -->
+<!-- Starfield background (option `starfield: true` in _quarto.yml). Generated; do not edit. -->
+<script>document.documentElement.classList.add('sm-starfield');</script>
 <canvas class="sm-canvas" aria-hidden="true"></canvas>
 <script src="https://www.statmania.info/starfield.js" async=""></script>
 <!-- Site footer. Edit the links below; social links are "#" placeholders. -->

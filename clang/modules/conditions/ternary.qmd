@@ -6,6 +6,19 @@ kind: read
 objectives:
 - 'Write an if-else as one expression with ?:'
 - Use other if shortcuts safely
+cheatsheet:
+- code: 'max = a > b ? a : b;'
+  text: Larger of two values
+- code: if (x) ...
+  text: Any non-zero value is true
+- code: (a > b)
+  text: A comparison is 1 or 0
+- code: 'printf("%s", ok ? "yes" : "no")'
+  text: Choose text inline
+rail-links:
+- title: Conditional operator
+  url: https://en.cppreference.com/w/c/language/operator_other
+  icon: fa-book
 ---
 
 ![The ternary operator replaces a five-line if-else with one expression.](../../media/c-ternary-shortcut.svg){fig-alt="A five-line if-else block assigning the larger of a and b to max, with an arrow to the one-line version max = a > b ? a : b, with the condition, the true value and the false value labelled."}
@@ -234,3 +247,13 @@ printf("%.1f\n", 5 > 3 ? 1.5 : 2);
 | `count += cond;` | `if (cond) count++;` | counting matches |
 | `if (c) stmt;` | `if (c) { stmt; }` | one short statement, no later additions |
 | `name[i]` | a chain of `else if` | an index selects a fixed value |
+
+::: {.takeaways}
+- `cond ? a : b` is an expression that picks a value.
+- Use it for choosing a value, not for long branches.
+- Parenthesise it inside bigger expressions.
+:::
+
+::: {.column-margin}
+**Expression.** Code that produces a value, unlike a statement such as `if`.
+:::

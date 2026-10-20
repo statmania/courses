@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0c647c8580895af5b89a9f2b09cf3b6e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-961a7574ac9e049661ed0ed39fb0bc92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -388,7 +388,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/data-structures/index.html">Arrays and Structs</a></li><li class="breadcrumb-item"><a href="../../modules/data-structures/structs.html">Structs in C: Grouping Related Data (with Python and R Comparisons)</a></li></ol></nav>
 <div class="quarto-title">
@@ -422,6 +422,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Group different types into one struct</li>
 <li>Use arrays of structs, typedef and -&gt;</li>
 <li>Compare structs with Python dicts and R lists</li>
+</ul></div>
+<div class="rail-card cheatsheet"><h4 class="anchored"><i class="fa-solid fa-rectangle-list"></i>Cheat sheet</h4><dl>
+<div><dt><code>struct S { int id; };</code></dt><dd>Declare a struct type</dd></div>
+<div><dt><code>s.id = 7;</code></dt><dd>Access a field</dd></div>
+<div><dt><code>p-&gt;id</code></dt><dd>Field through a pointer</dd></div>
+<div><dt><code>typedef struct {…} S;</code></dt><dd>Name it once</dd></div>
+</dl></div>
+<div class="rail-card resources"><h4 class="anchored"><i class="fa-solid fa-link"></i>Resources</h4><ul>
+<li><a href="https://en.cppreference.com/w/c/language/struct"><i class="fa-solid fa-book"></i>Struct types</a></li>
 </ul></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -671,7 +680,7 @@ Charlie     ID: 103  GPA: 3.90</code></pre>
 </ul>
 <p>If we find ourselves passing the same set of variables to multiple functions, or keeping parallel arrays in sync, that’s a signal to define a struct.</p>
 </section>
-<section id="a-practical-summary" class="level3">
+<section id="a-practical-summary" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="a-practical-summary">A Practical Summary</h3>
 <p>Let’s start with Example 1 (student record) and Example 3 (point): write them, compile them, run them. Then we can modify them:</p>
 <ul>
@@ -680,14 +689,23 @@ Charlie     ID: 103  GPA: 3.90</code></pre>
 <li>Build an array of 5 students and sort them by GPA.</li>
 </ul>
 <p>Once we’re comfortable with these, structs will become a natural tool for organizing our data, and we’ll be ready for pointer-based data structures such as linked lists, trees and hash tables.</p>
+<div class="takeaways">
+<ul>
+<li>A struct groups fields of different types into one value.</li>
+<li>Use <code>.</code> on a struct and <code>-&gt;</code> on a pointer to one.</li>
+<li><code>typedef</code> gives the struct a shorter name.</li>
+</ul>
+</div>
 
 
-</section>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Padding.</strong> Unused bytes the compiler inserts between fields to keep them aligned.</p>
+</div></div></section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<!-- Starfield background. The canvas is drawn by the shared site script (same one the main
-     site and the other courses use), loaded from the site root so it works at any depth.
-     CSS for .sm-canvas is in theme/course.scss. Without the script the page is just dark. -->
+<!-- Starfield background (option `starfield: true` in _quarto.yml). Generated; do not edit. -->
+<script>document.documentElement.classList.add('sm-starfield');</script>
 <canvas class="sm-canvas" aria-hidden="true"></canvas>
 <script src="https://www.statmania.info/starfield.js" async=""></script>
 <!-- Site footer. Edit the links below; social links are "#" placeholders. -->

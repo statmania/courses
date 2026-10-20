@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0c647c8580895af5b89a9f2b09cf3b6e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-961a7574ac9e049661ed0ed39fb0bc92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -386,7 +386,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/random/index.html">Random Numbers</a></li><li class="breadcrumb-item"><a href="../../modules/random/srand.html">srand(time(NULL)) in C: Why Random Numbers Repeat and How to Seed Them</a></li></ol></nav>
 <div class="quarto-title">
@@ -419,6 +419,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="objectives"><p class="objectives-label"><i class="fa-solid fa-bullseye"></i>By the end of this lesson you will</p><ul>
 <li>Explain why rand() repeats without a seed</li>
 <li>Seed the generator once with srand(time(NULL))</li>
+</ul></div>
+<div class="rail-card cheatsheet"><h4 class="anchored"><i class="fa-solid fa-rectangle-list"></i>Cheat sheet</h4><dl>
+<div><dt><code>rand()</code></dt><dd>Next pseudo-random int</dd></div>
+<div><dt><code>srand(seed);</code></dt><dd>Set the starting point</dd></div>
+<div><dt><code>time(NULL)</code></dt><dd>Seconds since 1970</dd></div>
+<div><dt><code>rand() % 6 + 1</code></dt><dd>A die roll, 1 to 6</dd></div>
+</dl></div>
+<div class="rail-card resources"><h4 class="anchored"><i class="fa-solid fa-link"></i>Resources</h4><ul>
+<li><a href="https://en.cppreference.com/w/c/numeric/random/rand"><i class="fa-solid fa-book"></i>rand</a></li>
+<li><a href="https://en.cppreference.com/w/c/chrono/time"><i class="fa-solid fa-book"></i>time</a></li>
 </ul></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -526,7 +536,7 @@ Note
 <li><strong>In C++</strong>, prefer <code>&lt;random&gt;</code> (<code>std::mt19937</code> with <code>std::random_device</code>) over <code>rand()</code>/<code>srand()</code>.</li>
 </ul>
 </section>
-<section id="quick-summary" class="level3">
+<section id="quick-summary" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="quick-summary">Quick Summary</h3>
 <table class="caption-top table">
 <colgroup>
@@ -562,14 +572,23 @@ Note
 </tr>
 </tbody>
 </table>
+<div class="takeaways">
+<ul>
+<li>Without a seed, <code>rand()</code> repeats the same sequence every run.</li>
+<li><code>srand(time(NULL))</code> seeds from the clock.</li>
+<li>Seed once, at the start of <code>main</code>, never inside a loop.</li>
+</ul>
+</div>
 
 
-</section>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Seed.</strong> The starting value of a pseudo-random generator; the same seed gives the same numbers.</p>
+</div></div></section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<!-- Starfield background. The canvas is drawn by the shared site script (same one the main
-     site and the other courses use), loaded from the site root so it works at any depth.
-     CSS for .sm-canvas is in theme/course.scss. Without the script the page is just dark. -->
+<!-- Starfield background (option `starfield: true` in _quarto.yml). Generated; do not edit. -->
+<script>document.documentElement.classList.add('sm-starfield');</script>
 <canvas class="sm-canvas" aria-hidden="true"></canvas>
 <script src="https://www.statmania.info/starfield.js" async=""></script>
 <!-- Site footer. Edit the links below; social links are "#" placeholders. -->

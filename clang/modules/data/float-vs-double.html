@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0c647c8580895af5b89a9f2b09cf3b6e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-961a7574ac9e049661ed0ed39fb0bc92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -386,7 +386,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/data/index.html">Variables and Data Types</a></li><li class="breadcrumb-item"><a href="../../modules/data/float-vs-double.html">float vs double in C: Precision, Memory, and When to Use Which</a></li></ol></nav>
 <div class="quarto-title">
@@ -419,6 +419,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="objectives"><p class="objectives-label"><i class="fa-solid fa-bullseye"></i>By the end of this lesson you will</p><ul>
 <li>Compare float and double in size, precision and range</li>
 <li>Use the right literals and format specifiers</li>
+</ul></div>
+<div class="rail-card cheatsheet"><h4 class="anchored"><i class="fa-solid fa-rectangle-list"></i>Cheat sheet</h4><dl>
+<div><dt><code>float</code></dt><dd>4 bytes, about 7 digits</dd></div>
+<div><dt><code>double</code></dt><dd>8 bytes, about 15 digits</dd></div>
+<div><dt><code>3.14f</code></dt><dd>A float literal</dd></div>
+<div><dt><code>%f / %lf</code></dt><dd>printf / scanf specifiers</dd></div>
+</dl></div>
+<div class="rail-card resources"><h4 class="anchored"><i class="fa-solid fa-link"></i>Resources</h4><ul>
+<li><a href="https://en.cppreference.com/w/c/language/arithmetic_types"><i class="fa-solid fa-book"></i>Arithmetic types</a></li>
+<li><a href="https://en.cppreference.com/w/c/numeric/fenv"><i class="fa-solid fa-book"></i>Floating-point environment</a></li>
 </ul></div>
 <p><code>float</code> and <code>double</code> both store decimal (floating-point) numbers in C, but they differ in precision, memory usage, and range.</p>
 <div class="quarto-figure quarto-figure-center">
@@ -585,7 +595,7 @@ Double value: 3.141592653589793</code></pre>
 </div>
 </div>
 </section>
-<section id="references" class="level2">
+<section id="references" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <ol type="1">
 <li><a href="https://www.reddit.com/r/learnprogramming/comments/1gi6xo5/float_vs_double_whats_the_key_difference/">Float vs double: what’s the key difference? (Reddit r/learnprogramming)</a></li>
@@ -598,14 +608,23 @@ Double value: 3.141592653589793</code></pre>
 <li><a href="https://unstop.com/blog/difference-between-float-and-double">Difference between float and double (Unstop)</a></li>
 <li><a href="https://meshlib.io/documentation/FloatVSDouble.html">Float vs double (MeshLib)</a></li>
 </ol>
+<div class="takeaways">
+<ul>
+<li><code>double</code> has about 15 to 16 digits of precision, <code>float</code> about 7.</li>
+<li>Neither stores 0.1 exactly.</li>
+<li>Default to <code>double</code>; literals like <code>3.14</code> are already doubles.</li>
+</ul>
+</div>
 
 
-</section>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Precision.</strong> How many significant digits a type can keep before rounding changes the value.</p>
+</div></div></section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<!-- Starfield background. The canvas is drawn by the shared site script (same one the main
-     site and the other courses use), loaded from the site root so it works at any depth.
-     CSS for .sm-canvas is in theme/course.scss. Without the script the page is just dark. -->
+<!-- Starfield background (option `starfield: true` in _quarto.yml). Generated; do not edit. -->
+<script>document.documentElement.classList.add('sm-starfield');</script>
 <canvas class="sm-canvas" aria-hidden="true"></canvas>
 <script src="https://www.statmania.info/starfield.js" async=""></script>
 <!-- Site footer. Edit the links below; social links are "#" placeholders. -->

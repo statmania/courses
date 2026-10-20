@@ -6,6 +6,22 @@ kind: read
 objectives:
 - Build and run a C file with one gcc command
 - Choose a fast way to try small snippets
+cheatsheet:
+- code: gcc a.c -o a
+  text: Compile a.c into program a
+- code: ./a
+  text: Run it
+- code: -Wall -Wextra
+  text: Turn on useful warnings
+- code: ./a < in.txt
+  text: Feed input from a file
+rail-links:
+- title: GCC manual
+  url: https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html
+  icon: fa-terminal
+- title: OnlineGDB C compiler
+  url: https://www.onlinegdb.com/online_c_compiler
+  icon: fa-globe
 ---
 
 ![Write a few lines of C, then build and run them with one gcc command.](../../media/c-test-code-quickly.svg){fig-alt="A sketch of a person at a computer whose terminal runs gcc test.c and prints hi, beside a hexagonal C logo with scraps of C code floating around."}
@@ -88,3 +104,13 @@ Adding `-fsanitize=address,undefined -g` to the `gcc` command makes the program 
 
 - [Stack Overflow: how to test a C or C++ snippet quickly](https://stackoverflow.com/questions/6815383/how-to-test-c-or-c-snippet-quickly)
 - [Quora: testing a C or C++ program without entering inputs manually](https://www.quora.com/How-can-I-test-a-C-or-C++-program-without-having-to-manually-enter-inputs-every-time)
+
+::: {.takeaways}
+- `gcc file.c -o out && ./out` builds and runs in one line.
+- Online compilers need no setup for tiny snippets.
+- Add `-Wall -Wextra` to catch mistakes early.
+:::
+
+::: {.column-margin}
+**Redirect.** `<` makes a program read its input from a file instead of the keyboard.
+:::

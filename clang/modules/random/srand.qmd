@@ -6,6 +6,22 @@ kind: read
 objectives:
 - Explain why rand() repeats without a seed
 - Seed the generator once with srand(time(NULL))
+cheatsheet:
+- code: rand()
+  text: Next pseudo-random int
+- code: srand(seed);
+  text: Set the starting point
+- code: time(NULL)
+  text: Seconds since 1970
+- code: rand() % 6 + 1
+  text: A die roll, 1 to 6
+rail-links:
+- title: rand
+  url: https://en.cppreference.com/w/c/numeric/random/rand
+  icon: fa-book
+- title: time
+  url: https://en.cppreference.com/w/c/chrono/time
+  icon: fa-book
 ---
 
 ![srand(time(NULL)) feeds the clock into the generator, and rand() then produces a fixed sequence from that seed.](../../media/c-srand-time-null.svg){fig-alt="A clock labelled time(NULL) leads to a box labelled srand, the seed, which leads to a box of random numbers from rand()."}
@@ -144,3 +160,13 @@ Every pass restarts the sequence from the same seed and takes its first number, 
 | Why cast to `unsigned int`? | `time_t` is wider; the cast avoids a `-Wconversion` warning. |
 | How often do we call `srand()`? | Once, at the start of the program. |
 | When do we use a fixed seed? | Testing, debugging, reproducible simulations. |
+
+::: {.takeaways}
+- Without a seed, `rand()` repeats the same sequence every run.
+- `srand(time(NULL))` seeds from the clock.
+- Seed once, at the start of `main`, never inside a loop.
+:::
+
+::: {.column-margin}
+**Seed.** The starting value of a pseudo-random generator; the same seed gives the same numbers.
+:::

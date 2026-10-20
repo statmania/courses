@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0c647c8580895af5b89a9f2b09cf3b6e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-961a7574ac9e049661ed0ed39fb0bc92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -387,7 +387,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/conditions/index.html">Making Decisions</a></li><li class="breadcrumb-item"><a href="../../modules/conditions/switch.html">The switch Statement in C: Syntax, break, Fall-Through and Examples</a></li></ol></nav>
 <div class="quarto-title">
@@ -421,6 +421,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Write a switch with break and default</li>
 <li>Use fall-through deliberately</li>
 <li>Choose between switch and if / else if</li>
+</ul></div>
+<div class="rail-card cheatsheet"><h4 class="anchored"><i class="fa-solid fa-rectangle-list"></i>Cheat sheet</h4><dl>
+<div><dt><code>switch (x) { … }</code></dt><dd>Pick a case by value</dd></div>
+<div><dt><code>case 1: … break;</code></dt><dd>Run, then leave the switch</dd></div>
+<div><dt><code>default:</code></dt><dd>No case matched</dd></div>
+<div><dt><code>case ‘a’: case ‘b’:</code></dt><dd>Grouped cases</dd></div>
+</dl></div>
+<div class="rail-card resources"><h4 class="anchored"><i class="fa-solid fa-link"></i>Resources</h4><ul>
+<li><a href="https://en.cppreference.com/w/c/language/switch"><i class="fa-solid fa-book"></i>switch statement</a></li>
+<li><a href="https://en.cppreference.com/w/c/language/break"><i class="fa-solid fa-book"></i>break statement</a></li>
 </ul></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -614,17 +624,26 @@ three</code></pre>
 <li>Putting <code>;</code> after a case value: it must be <code>case 1:</code>, with a colon.</li>
 </ol>
 </section>
-<section id="key-takeaway" class="level2">
+<section id="key-takeaway" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="key-takeaway">Key takeaway</h2>
 <p><code>switch</code> evaluates an integer expression once and jumps straight to the matching <code>case</code>. Remember <code>break</code> after each case unless we deliberately want fall-through, and always add a <code>default</code> for input we didn’t expect.</p>
+<div class="takeaways">
+<ul>
+<li><code>switch</code> compares one integer or char against <code>case</code> labels.</li>
+<li>Without <code>break</code>, execution falls through to the next case.</li>
+<li>Always add a <code>default</code> case.</li>
+</ul>
+</div>
 
 
-</section>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Fall-through.</strong> Continuing into the next <code>case</code> because a <code>break</code> is missing.</p>
+</div></div></section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<!-- Starfield background. The canvas is drawn by the shared site script (same one the main
-     site and the other courses use), loaded from the site root so it works at any depth.
-     CSS for .sm-canvas is in theme/course.scss. Without the script the page is just dark. -->
+<!-- Starfield background (option `starfield: true` in _quarto.yml). Generated; do not edit. -->
+<script>document.documentElement.classList.add('sm-starfield');</script>
 <canvas class="sm-canvas" aria-hidden="true"></canvas>
 <script src="https://www.statmania.info/starfield.js" async=""></script>
 <!-- Site footer. Edit the links below; social links are "#" placeholders. -->

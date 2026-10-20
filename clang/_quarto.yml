@@ -2,6 +2,9 @@
 # Single source of truth for course structure: the sidebar below.
 # scripts/build.py reads it (plus each page's front matter) to generate the
 # home page and the module overview pages on every render.
+# Optional animated starfield background (needs internet to load the shared script).
+starfield: true
+
 project:
   type: website
   output-dir: .
@@ -85,7 +88,7 @@ format:
       text: |
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     include-after-body:
-      - theme/starfield.html
+      - _generated/starfield.html   # empty unless `starfield: true` above
       - theme/footer.html
       - theme/scripts.html
       - extra.html   # course-owned: hint / reveal-code toggles

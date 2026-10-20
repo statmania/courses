@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0c647c8580895af5b89a9f2b09cf3b6e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-961a7574ac9e049661ed0ed39fb0bc92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -382,7 +382,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/operators/index.html">Operators and Input</a></li><li class="breadcrumb-item"><a href="../../modules/operators/validate-input.html">Checking User Input in C: Is It Really a Number?</a></li></ol></nav>
 <div class="quarto-title">
@@ -415,6 +415,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="objectives"><p class="objectives-label"><i class="fa-solid fa-bullseye"></i>By the end of this lesson you will</p><ul>
 <li>Check scanf’s return value</li>
 <li>Validate whole-number input with fgets and strtol</li>
+</ul></div>
+<div class="rail-card cheatsheet"><h4 class="anchored"><i class="fa-solid fa-rectangle-list"></i>Cheat sheet</h4><dl>
+<div><dt><code>scanf(“%d”, &amp;n) == 1</code></dt><dd>True if an int was read</dd></div>
+<div><dt><code>fgets(buf, n, stdin)</code></dt><dd>Read a whole line</dd></div>
+<div><dt><code>strtol(s, &amp;end, 10)</code></dt><dd>Convert; end marks where it stopped</dd></div>
+<div><dt><code>*end == ‘’</code></dt><dd>Nothing left over: valid</dd></div>
+</dl></div>
+<div class="rail-card resources"><h4 class="anchored"><i class="fa-solid fa-link"></i>Resources</h4><ul>
+<li><a href="https://en.cppreference.com/w/c/io/fscanf"><i class="fa-solid fa-book"></i>scanf</a></li>
+<li><a href="https://en.cppreference.com/w/c/string/byte/strtol"><i class="fa-solid fa-book"></i>strtol</a></li>
 </ul></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -498,21 +508,30 @@ Please enter a whole number from 0 to 20.
 Enter a number: 20
 20! = 2432902008176640000</code></pre>
 </section>
-<section id="summary" class="level3">
+<section id="summary" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="summary">Summary</h3>
 <ul>
 <li>Always check what <code>scanf</code> returns.</li>
 <li><code>scanf</code> accepts <code>12abc</code> as <code>12</code>; for strict checks use <code>fgets</code> + <code>strtol</code> and test <code>*end</code>.</li>
 <li>Check the type first, then whether the value makes sense.</li>
 </ul>
+<div class="takeaways">
+<ul>
+<li><code>scanf</code> returns how many values it read; check it.</li>
+<li>Partial input like <code>12abc</code> slips past a plain <code>scanf</code>.</li>
+<li><code>fgets</code> + <code>strtol</code> reports exactly where the number ends.</li>
+</ul>
+</div>
 
 
-</section>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Buffer.</strong> A block of memory holding text before the program uses it, such as the line <code>fgets</code> reads.</p>
+</div></div></section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<!-- Starfield background. The canvas is drawn by the shared site script (same one the main
-     site and the other courses use), loaded from the site root so it works at any depth.
-     CSS for .sm-canvas is in theme/course.scss. Without the script the page is just dark. -->
+<!-- Starfield background (option `starfield: true` in _quarto.yml). Generated; do not edit. -->
+<script>document.documentElement.classList.add('sm-starfield');</script>
 <canvas class="sm-canvas" aria-hidden="true"></canvas>
 <script src="https://www.statmania.info/starfield.js" async=""></script>
 <!-- Site footer. Edit the links below; social links are "#" placeholders. -->

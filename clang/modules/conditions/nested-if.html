@@ -80,7 +80,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0c647c8580895af5b89a9f2b09cf3b6e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-961a7574ac9e049661ed0ed39fb0bc92.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed slimcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -384,7 +384,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content page-columns page-full column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../modules/conditions/index.html">Making Decisions</a></li><li class="breadcrumb-item"><a href="../../modules/conditions/nested-if.html">Nested if in C, Explained with Real-Life Examples</a></li></ol></nav>
 <div class="quarto-title">
@@ -417,6 +417,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="objectives"><p class="objectives-label"><i class="fa-solid fa-bullseye"></i>By the end of this lesson you will</p><ul>
 <li>Predict when an inner if runs</li>
 <li>Trace a nested decision with a flowchart</li>
+</ul></div>
+<div class="rail-card cheatsheet"><h4 class="anchored"><i class="fa-solid fa-rectangle-list"></i>Cheat sheet</h4><dl>
+<div><dt><code>if (a) { if (b) {…} }</code></dt><dd>b is checked only when a is true</dd></div>
+<div><dt><code>if (a &amp;&amp; b)</code></dt><dd>Flat version of the same test</dd></div>
+<div><dt><code>else</code></dt><dd>Pairs with the nearest if</dd></div>
+<div><dt><code>{ }</code></dt><dd>Always add braces</dd></div>
+</dl></div>
+<div class="rail-card resources"><h4 class="anchored"><i class="fa-solid fa-link"></i>Resources</h4><ul>
+<li><a href="https://en.cppreference.com/w/c/language/if"><i class="fa-solid fa-book"></i>if statement</a></li>
 </ul></div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -542,7 +551,7 @@ Transaction denied: Insufficient funds in your account.</code></pre>
 <h2 class="anchored" data-anchor-id="key-takeaway">Key takeaway</h2>
 <p>The inner <code>if</code> is evaluated only when the outer condition is true. This makes the program efficient and lets you express steps that must happen in order, such as verifying identity before touching money.</p>
 </section>
-<section id="references" class="level2">
+<section id="references" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <ol type="1">
 <li><a href="https://www.w3schools.com/c/c_conditions_nested.php">C nested if (W3Schools)</a></li>
@@ -550,14 +559,23 @@ Transaction denied: Insufficient funds in your account.</code></pre>
 <li><a href="https://www.wscubetech.com/resources/c-programming/nested-if-else">Nested if-else in C (WsCube Tech)</a></li>
 <li><a href="https://beginnersbook.com/2014/01/c-if-else-statement-example/">C if…else statement example (BeginnersBook)</a></li>
 </ol>
+<div class="takeaways">
+<ul>
+<li>The inner <code>if</code> runs only when the outer condition is true.</li>
+<li><code>&amp;&amp;</code> can replace a nest when there is no <code>else</code> between the checks.</li>
+<li>Use braces on every level.</li>
+</ul>
+</div>
 
 
-</section>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p><strong>Nesting.</strong> Placing one statement inside another, such as an <code>if</code> inside an <code>if</code>.</p>
+</div></div></section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<!-- Starfield background. The canvas is drawn by the shared site script (same one the main
-     site and the other courses use), loaded from the site root so it works at any depth.
-     CSS for .sm-canvas is in theme/course.scss. Without the script the page is just dark. -->
+<!-- Starfield background (option `starfield: true` in _quarto.yml). Generated; do not edit. -->
+<script>document.documentElement.classList.add('sm-starfield');</script>
 <canvas class="sm-canvas" aria-hidden="true"></canvas>
 <script src="https://www.statmania.info/starfield.js" async=""></script>
 <!-- Site footer. Edit the links below; social links are "#" placeholders. -->

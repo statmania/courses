@@ -6,6 +6,19 @@ kind: lab
 objectives:
 - Draw patterns with nested for loops
 - Explain how the outer and inner loops interact
+cheatsheet:
+- code: for (r...) for (c...)
+  text: Rows, then columns
+- code: c <= r
+  text: 'Triangle: grow with the row'
+- code: (r + c) % 2
+  text: Checkerboard test
+- code: printf("\n");
+  text: After each row
+rail-links:
+- title: for loop
+  url: https://en.cppreference.com/w/c/language/for
+  icon: fa-book
 ---
 
 ![The outer loop picks the row; the inner loop walks across its columns.](../../media/c-nested-for.svg){fig-alt="An outer for loop over rows containing an inner for loop over columns, beside a grid of dots with one dot highlighted."}
@@ -252,3 +265,13 @@ Whenever a pattern depends on a cell's position, the trick is to find a formula 
 | 3. Number triangle | Inner limit depends on the outer variable |
 | 4. Pyramid | Two inner loops in one outer loop |
 | 5. Checkerboard | A formula in `row` and `col` plus an `if` |
+
+::: {.takeaways}
+- The outer loop picks the row; the inner loop walks its columns.
+- Print `\n` after the inner loop finishes.
+- Row and column numbers drive the pattern.
+:::
+
+::: {.column-margin}
+**Nested loop.** A loop inside another loop; the inner loop runs fully for each outer pass.
+:::
