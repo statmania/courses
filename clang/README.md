@@ -17,6 +17,10 @@ Files are split by owner so that template updates can be re-imported without clo
 
 `.kit-version` records the kit commit this course was last synced with.
 
+**Feature requests go into the kit first.** Change the kit (`theme/`, `scripts/`), then import it
+here with `tools/update-kit.sh`. Editing kit-owned files in this course is lost on the next update.
+Course-only tweaks belong in `extra.scss` / `extra.html`.
+
 ## Updating when the kit changes
 
 ```bash
