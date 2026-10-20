@@ -1,0 +1,6 @@
+---
+title: "Making Decisions"
+description: "Branch with if, the ternary operator and switch."
+---
+
+{{< include ../../_generated/conditions.md >}}

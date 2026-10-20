@@ -1,0 +1,6 @@
+---
+title: "Loops"
+description: "Repeat work with while, do-while and for, then practise."
+---
+
+{{< include ../../_generated/loops.md >}}

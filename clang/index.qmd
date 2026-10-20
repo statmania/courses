@@ -1,0 +1,38 @@
+---
+title: "C Programming"
+description: "Learn C from Hello, World! to loops, arrays, structs and random numbers, with worked examples, practice problems and hints."
+title-block-style: none
+toc: false
+course:
+  category: ["Programming", "C"]
+  levels: ["Beginner"]
+  updated: "10.2026"
+  instructor:
+    name: "Abdullah Al Mahmud"
+    role: "Stat Mania"
+    bio: "Stat Mania builds free, hands-on statistics and programming courses."
+  outcomes:
+    - "Write, compile and run C programs with gcc."
+    - "Choose the right variable types and operators."
+    - "Control program flow with if, switch and every kind of loop."
+    - "Store data in arrays and group it in structs."
+    - "Validate user input and generate random numbers."
+  requirements:
+    - "A computer with gcc installed (or an online C compiler)."
+    - "No prior programming experience needed."
+  includes:
+    - { icon: "fa-layer-group", text: "Modules and lessons" }
+    - { icon: "fa-flask", text: "Practice problems with hints" }
+    - { icon: "fa-bars-progress", text: "Saved progress, no account" }
+    - { icon: "fa-mobile-screen", text: "Works on phones" }
+---
+
+{{< include _generated/home.md >}}
+
+```{=html}
+<p class="progress-note"><i class="fa-solid fa-circle-info"></i> <span title="Progress is stored only in this browser on this device. It will not appear on another browser or device, and clearing site data erases it.">Progress is saved in this browser only.</span></p>
+```
+
+::: {.column-margin}
+{{< include _generated/home-rail.md >}}
+:::

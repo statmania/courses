@@ -1,0 +1,90 @@
+# Course-owned file. Kit-owned (overwritten by tools/update-kit.sh): theme/, scripts/, img/.
+# Single source of truth for course structure: the sidebar below.
+# scripts/build.py reads it (plus each page's front matter) to generate the
+# home page and the module overview pages on every render.
+project:
+  type: website
+  output-dir: .
+  pre-render: scripts/build.py
+
+website:
+  title: "Stat Mania"
+  site-url: "https://www.statmania.info/courses/clang/"   # set per course (enables sitemap.xml)
+  page-navigation: true
+  back-to-top-navigation: true
+  bread-crumbs: true
+  navbar:
+    background: dark
+    logo: img/statmania_logo.svg          # replace this file (or change the path) to rebrand
+    logo-href: https://www.statmania.info/   # where clicking the logo goes
+    left:
+      - href: index.qmd
+        text: "C Programming"
+      - href: ../index.html
+        text: All Courses
+        icon: mortarboard
+  sidebar:
+    style: docked
+    background: dark
+    title: "C Programming"
+    contents:
+      - text: "Course Home"
+        href: index.qmd
+      - section: "Getting Started"
+        href: modules/start/index.qmd
+        contents:
+          - modules/start/hello-world.qmd
+          - modules/start/test-code-quickly.qmd
+      - section: "Variables and Data Types"
+        href: modules/data/index.qmd
+        contents:
+          - modules/data/declare-variables.qmd
+          - modules/data/float-vs-double.qmd
+      - section: "Operators and Input"
+        href: modules/operators/index.qmd
+        contents:
+          - modules/operators/increment.qmd
+          - modules/operators/validate-input.qmd
+      - section: "Making Decisions"
+        href: modules/conditions/index.qmd
+        contents:
+          - modules/conditions/nested-if.qmd
+          - modules/conditions/ternary.qmd
+          - modules/conditions/switch.qmd
+      - section: "Loops"
+        href: modules/loops/index.qmd
+        contents:
+          - modules/loops/do-while.qmd
+          - modules/loops/break.qmd
+          - modules/loops/print-lists.qmd
+          - modules/loops/while-practice.qmd
+          - modules/loops/for-practice.qmd
+          - modules/loops/nested-for-practice.qmd
+      - section: "Arrays and Structs"
+        href: modules/data-structures/index.qmd
+        contents:
+          - modules/data-structures/arrays-from-loops.qmd
+          - modules/data-structures/structs.qmd
+      - section: "Random Numbers"
+        href: modules/random/index.qmd
+        contents:
+          - modules/random/srand.qmd
+          - modules/random/die-throw.qmd
+
+format:
+  html:
+    theme: [cosmo, theme/course.scss, extra.scss]
+    page-layout: full
+    toc: true
+    toc-title: "On this page"
+    toc-depth: 3
+    smooth-scroll: true
+    filters:
+      - theme/lesson.lua
+    include-in-header:
+      text: |
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    include-after-body:
+      - theme/footer.html
+      - theme/scripts.html
+      - extra.html   # course-owned: hint / reveal-code toggles

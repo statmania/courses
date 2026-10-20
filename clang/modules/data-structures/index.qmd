@@ -1,0 +1,6 @@
+---
+title: "Arrays and Structs"
+description: "Store many values, and group related ones."
+---
+
+{{< include ../../_generated/data-structures.md >}}

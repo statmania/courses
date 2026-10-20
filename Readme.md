@@ -6,7 +6,7 @@ Course material for [www.statmania.info/courses/](https://www.statmania.info/cou
 | :--- | :--- |
 | `index.html` | The course hub page (hand-maintained; see below) |
 | `rprogramming/` | Interactive R course: a Quarto website with live WebR code blocks and quizzes. Reference implementation for new courses |
-| `clang/` | C code samples |
+| `clang/` | C course built from `course-kit` (see `clang/tools/update-kit.sh` to import template updates); `clang/code/` holds loose C samples |
 | `structured-programming-language/` | Syllabus notes |
 | `css/` | Shared dark-theme CSS |
 | `firebase-progress-plan.md` | Notes on adding login and progress tracking (not implemented) |

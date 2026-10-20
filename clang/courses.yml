@@ -1,0 +1,15 @@
+# Required by scripts/build.py (kit-owned), which always builds a catalog. This course links
+# "All Courses" to the hub page instead, so the generated catalog is unused. Keep it minimal.
+intro: "Unused; see ../index.html."
+courses:
+  - slug: clang
+    self: true
+    title: "C Programming"
+    description: "Learn C from Hello, World! to loops, arrays, structs and random numbers."
+    url: "./"
+    icon: fa-code
+    level: Beginner
+    category: Programming
+    status: live
+path: [clang]
+help: []

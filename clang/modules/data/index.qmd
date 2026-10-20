@@ -1,0 +1,6 @@
+---
+title: "Variables and Data Types"
+description: "Declare variables and choose the right numeric type."
+---
+
+{{< include ../../_generated/data.md >}}

@@ -1,0 +1,6 @@
+---
+title: "Random Numbers"
+description: "Generate and analyse random values."
+---
+
+{{< include ../../_generated/random.md >}}

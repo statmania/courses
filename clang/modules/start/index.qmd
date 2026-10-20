@@ -1,0 +1,6 @@
+---
+title: "Getting Started"
+description: "Write, compile and run your first C programs."
+---
+
+{{< include ../../_generated/start.md >}}
