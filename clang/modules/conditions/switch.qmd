@@ -7,15 +7,6 @@ objectives:
 - Write a switch with break and default
 - Use fall-through deliberately
 - Choose between switch and if / else if
-cheatsheet:
-- code: switch (x) { ... }
-  text: Pick a case by value
-- code: 'case 1: ... break;'
-  text: Run, then leave the switch
-- code: 'default:'
-  text: No case matched
-- code: 'case ''a'': case ''b'':'
-  text: Grouped cases
 rail-links:
 - title: switch statement
   url: https://en.cppreference.com/w/c/language/switch

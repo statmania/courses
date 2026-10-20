@@ -6,15 +6,6 @@ kind: read
 objectives:
 - Separate a loop's planned exit from break
 - Apply break to search, sentinel, retry and menu loops
-cheatsheet:
-- code: break;
-  text: Leave the loop now
-- code: while (1)
-  text: Endless loop, needs a break
-- code: if (x == t) break;
-  text: Stop on a match
-- code: continue;
-  text: Skip to the next pass
 rail-links:
 - title: break statement
   url: https://en.cppreference.com/w/c/language/break

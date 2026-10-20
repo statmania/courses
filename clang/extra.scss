@@ -1,5 +1,5 @@
 /*-- scss:rules --*/
-// Course-owned styles for lessons imported from the blog (hint / reveal-code toggles).
+// Course-owned styles (colours come from the kit tokens, so both themes work) for lessons imported from the blog (hint / reveal-code toggles).
 .reveal-code.rc-ready > .hint,
 .reveal-code.rc-ready > .code-copy-outer-scaffold,
 .reveal-code.rc-ready > .sourceCode,
@@ -12,17 +12,17 @@
 .rc-bar { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: .5rem; }
 .rc-btn {
   background: transparent;
-  color: #00e5ff;
-  border: 1px solid rgba(255,255,255,0.09);
+  color: $sm-cyan;
+  border: 1px solid $sm-line;
   border-radius: 999px;
   padding: .25rem .9rem;
   font-size: .85rem;
   cursor: pointer;
 }
-.rc-btn:hover, .rc-btn:focus-visible { border-color: #00e5ff; background: rgba(0,229,255,.08); }
+.rc-btn:hover, .rc-btn:focus-visible { border-color: $sm-cyan; background: rgba($sm-cyan,.08); }
 .reveal-code > .hint {
-  border-left: 3px solid #a855f7;
-  background: rgba(168,85,247,.08);
+  border-left: 3px solid $sm-purple;
+  background: rgba($sm-purple,.08);
   padding: .6rem .9rem;
   margin-bottom: .5rem;
   border-radius: 0 8px 8px 0;

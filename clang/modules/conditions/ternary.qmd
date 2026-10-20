@@ -6,15 +6,6 @@ kind: read
 objectives:
 - 'Write an if-else as one expression with ?:'
 - Use other if shortcuts safely
-cheatsheet:
-- code: 'max = a > b ? a : b;'
-  text: Larger of two values
-- code: if (x) ...
-  text: Any non-zero value is true
-- code: (a > b)
-  text: A comparison is 1 or 0
-- code: 'printf("%s", ok ? "yes" : "no")'
-  text: Choose text inline
 rail-links:
 - title: Conditional operator
   url: https://en.cppreference.com/w/c/language/operator_other

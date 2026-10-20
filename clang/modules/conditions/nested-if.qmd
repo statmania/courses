@@ -6,15 +6,6 @@ kind: read
 objectives:
 - Predict when an inner if runs
 - Trace a nested decision with a flowchart
-cheatsheet:
-- code: if (a) { if (b) {...} }
-  text: b is checked only when a is true
-- code: if (a && b)
-  text: Flat version of the same test
-- code: else
-  text: Pairs with the nearest if
-- code: '{ }'
-  text: Always add braces
 rail-links:
 - title: if statement
   url: https://en.cppreference.com/w/c/language/if

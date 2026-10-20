@@ -6,15 +6,6 @@ kind: read
 objectives:
 - Declare and initialise several variables in one statement
 - Avoid the pointer-asterisk and partial-initialisation traps
-cheatsheet:
-- code: int a, b, c;
-  text: Three uninitialised ints
-- code: int x = 5, y = 10;
-  text: Each gets its own value
-- code: int a = b = 0;
-  text: 'Chained: b must exist already'
-- code: int *p, q;
-  text: p is a pointer, q is an int
 rail-links:
 - title: Declarations
   url: https://en.cppreference.com/w/c/language/declarations

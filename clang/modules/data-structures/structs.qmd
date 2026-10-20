@@ -7,15 +7,6 @@ objectives:
 - Group different types into one struct
 - Use arrays of structs, typedef and ->
 - Compare structs with Python dicts and R lists
-cheatsheet:
-- code: struct S { int id; };
-  text: Declare a struct type
-- code: s.id = 7;
-  text: Access a field
-- code: p->id
-  text: Field through a pointer
-- code: typedef struct {...} S;
-  text: Name it once
 rail-links:
 - title: Struct types
   url: https://en.cppreference.com/w/c/language/struct

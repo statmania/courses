@@ -6,15 +6,6 @@ kind: read
 objectives:
 - Build and run a C file with one gcc command
 - Choose a fast way to try small snippets
-cheatsheet:
-- code: gcc a.c -o a
-  text: Compile a.c into program a
-- code: ./a
-  text: Run it
-- code: -Wall -Wextra
-  text: Turn on useful warnings
-- code: ./a < in.txt
-  text: Feed input from a file
 rail-links:
 - title: GCC manual
   url: https://gcc.gnu.org/onlinedocs/gcc/Invoking-GCC.html

@@ -6,15 +6,6 @@ kind: code
 objectives:
 - Check scanf's return value
 - Validate whole-number input with fgets and strtol
-cheatsheet:
-- code: scanf("%d", &n) == 1
-  text: True if an int was read
-- code: fgets(buf, n, stdin)
-  text: Read a whole line
-- code: strtol(s, &end, 10)
-  text: Convert; end marks where it stopped
-- code: '*end == ''\n'''
-  text: 'Nothing left over: valid'
 rail-links:
 - title: scanf
   url: https://en.cppreference.com/w/c/io/fscanf

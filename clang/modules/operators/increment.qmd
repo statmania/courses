@@ -6,15 +6,6 @@ kind: read
 objectives:
 - Tell ++i from i++ and say what each expression returns
 - Know when the difference matters
-cheatsheet:
-- code: b = ++a;
-  text: a becomes 6, b is 6
-- code: y = x++;
-  text: y is 5, x becomes 6
-- code: i++;
-  text: 'Standalone: same as ++i'
-- code: i += 1
-  text: Add 1 explicitly
 rail-links:
 - title: Increment and decrement
   url: https://en.cppreference.com/w/c/language/operator_incdec

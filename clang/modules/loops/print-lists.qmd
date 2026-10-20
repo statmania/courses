@@ -6,15 +6,6 @@ kind: code
 objectives:
 - Print a list with no trailing comma
 - Use newlines to print rows of numbers
-cheatsheet:
-- code: printf("%d, ", i)
-  text: Leaves a trailing comma
-- code: if (i > 0) printf(", ");
-  text: Separator before items
-- code: 'i ? ", " : ""'
-  text: Ternary separator
-- code: printf("\n");
-  text: End each row
 rail-links:
 - title: printf reference
   url: https://en.cppreference.com/w/c/io/fprintf

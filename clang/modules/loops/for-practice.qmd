@@ -6,15 +6,6 @@ kind: lab
 objectives:
 - Solve five for-loop problems
 - Check your work against hints and solutions
-cheatsheet:
-- code: for (i = 1; i <= n; i++)
-  text: Count 1 to n
-- code: i += 2
-  text: Step by two
-- code: product *= i;
-  text: Accumulate a product
-- code: next = a + b;
-  text: Fibonacci step
 rail-links:
 - title: for loop
   url: https://en.cppreference.com/w/c/language/for

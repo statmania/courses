@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Adds the kit's right-rail content to every lesson: cheatsheet, rail-links (front matter) and
-.takeaways / .column-margin blocks (end of body). Idempotent: re-running replaces front matter
+"""Adds the kit's right-rail content to every lesson: rail-links (front matter) and
+.takeaways / .column-margin blocks (end of body). No cheat sheet: it overlapped the takeaways. Idempotent: re-running replaces front matter
 keys and skips blocks that are already there. Course-owned."""
 import re
 from pathlib import Path
@@ -143,7 +143,7 @@ def main():
         take, cheat, links, (term, definition) = D[slug]
         m = re.match(r"^---\n(.*?)\n---\n(.*)$", f.read_text(encoding="utf-8"), re.S)
         meta, body = yaml.safe_load(m.group(1)), m.group(2)
-        meta["cheatsheet"] = [{"code": c, "text": t} for c, t in cheat]
+        meta.pop("cheatsheet", None)
         meta["rail-links"] = links
         body = body.rstrip("\n") + "\n"
         if "{.takeaways}" not in body:

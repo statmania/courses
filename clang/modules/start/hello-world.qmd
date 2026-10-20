@@ -6,15 +6,6 @@ kind: read
 objectives:
 - Explain every line of the classic Hello, World! program
 - Compare C's structure with Python and R
-cheatsheet:
-- code: '#include <stdio.h>'
-  text: Bring in input/output functions
-- code: int main(void)
-  text: Where the program starts
-- code: printf("hi\n");
-  text: Print text; \n is a new line
-- code: return 0;
-  text: Exit with success
 rail-links:
 - title: printf reference
   url: https://en.cppreference.com/w/c/io/fprintf

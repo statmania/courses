@@ -6,15 +6,6 @@ kind: read
 objectives:
 - Compare float and double in size, precision and range
 - Use the right literals and format specifiers
-cheatsheet:
-- code: float
-  text: 4 bytes, about 7 digits
-- code: double
-  text: 8 bytes, about 15 digits
-- code: 3.14f
-  text: A float literal
-- code: '%f / %lf'
-  text: printf / scanf specifiers
 rail-links:
 - title: Arithmetic types
   url: https://en.cppreference.com/w/c/language/arithmetic_types

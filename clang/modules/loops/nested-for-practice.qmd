@@ -6,15 +6,6 @@ kind: lab
 objectives:
 - Draw patterns with nested for loops
 - Explain how the outer and inner loops interact
-cheatsheet:
-- code: for (r...) for (c...)
-  text: Rows, then columns
-- code: c <= r
-  text: 'Triangle: grow with the row'
-- code: (r + c) % 2
-  text: Checkerboard test
-- code: printf("\n");
-  text: After each row
 rail-links:
 - title: for loop
   url: https://en.cppreference.com/w/c/language/for

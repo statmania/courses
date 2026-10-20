@@ -6,15 +6,6 @@ kind: read
 objectives:
 - Explain why a do-while body runs at least once
 - Choose between while and do-while
-cheatsheet:
-- code: do { ... } while (c);
-  text: Run first, then test
-- code: while (c) { ... }
-  text: Test first, then run
-- code: do-while
-  text: Menus, retry prompts, PIN entry
-- code: break;
-  text: Leave the loop early
 rail-links:
 - title: do-while loop
   url: https://en.cppreference.com/w/c/language/do

@@ -6,15 +6,6 @@ kind: read
 objectives:
 - Explain why rand() repeats without a seed
 - Seed the generator once with srand(time(NULL))
-cheatsheet:
-- code: rand()
-  text: Next pseudo-random int
-- code: srand(seed);
-  text: Set the starting point
-- code: time(NULL)
-  text: Seconds since 1970
-- code: rand() % 6 + 1
-  text: A die roll, 1 to 6
 rail-links:
 - title: rand
   url: https://en.cppreference.com/w/c/numeric/random/rand

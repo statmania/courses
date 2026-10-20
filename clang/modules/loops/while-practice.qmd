@@ -6,15 +6,6 @@ kind: lab
 objectives:
 - Solve five while-loop problems
 - Check your work against hints and solutions
-cheatsheet:
-- code: while (i <= 10)
-  text: Repeat while true
-- code: i++;
-  text: Update the counter
-- code: n % 10
-  text: Last digit
-- code: n /= 10;
-  text: Drop the last digit
 rail-links:
 - title: while loop
   url: https://en.cppreference.com/w/c/language/while

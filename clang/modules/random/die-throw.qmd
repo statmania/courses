@@ -6,15 +6,6 @@ kind: code
 objectives:
 - Simulate tossing a die until a 6 appears
 - Store the history in an array and tally frequencies
-cheatsheet:
-- code: rand() % 6 + 1
-  text: A fair die
-- code: freq[roll]++;
-  text: Tally a face
-- code: int freq[7] = {0};
-  text: Slots 1 to 6 used
-- code: while (roll != 6)
-  text: Until a six appears
 rail-links:
 - title: rand
   url: https://en.cppreference.com/w/c/numeric/random/rand

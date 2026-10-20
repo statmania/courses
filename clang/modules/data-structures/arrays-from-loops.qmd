@@ -6,15 +6,6 @@ kind: code
 objectives:
 - Fill a fixed-size array from a loop
 - Grow an array with malloc and realloc
-cheatsheet:
-- code: int a[5];
-  text: Five ints, indices 0 to 4
-- code: a[i] = i * i;
-  text: Store a result
-- code: malloc(n * sizeof *p)
-  text: Allocate n items
-- code: realloc(p, m * sizeof *p)
-  text: Resize; free(p) when done
 rail-links:
 - title: Arrays
   url: https://en.cppreference.com/w/c/language/array
